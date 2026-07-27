@@ -9,12 +9,12 @@ logistic regression, served through a Streamlit interface.
 ```
 diabetes-prediction-system/
 ├── generate_dataset.py   # creates the synthetic training dataset
-├── diabetes_dataset.csv  # training data (generated)
+├── diabetes_dataset.csv  # training data 
 ├── train_model.py        # trains & saves the logistic regression model
 ├── app.py                # Streamlit app for live predictions
-├── logistic_regression_model.joblib  # trained model (generated)
-├── diabetes_scaler.joblib            # feature scaler (generated)
-├── feature_columns.joblib            # expected feature order (generated)
+├── logistic_regression_model.joblib  # trained model 
+├── diabetes_scaler.joblib            # feature scaler 
+├── feature_columns.joblib            # expected feature order 
 ├── requirements.txt
 └── README.md
 ```
@@ -38,32 +38,3 @@ python train_model.py        # trains and saves the model
 streamlit run app.py         # launches the web app in your browser
 ```
 
-## Pushing this to your own GitHub
-
-I can't push to your GitHub account directly (I don't have your
-credentials), but here's the fastest way to do it yourself:
-
-1. Go to https://github.com/new and create a new repository
-   (e.g. `Diabetes-Prediction-System`) — don't initialize it with a README.
-2. In a terminal, `cd` into this project folder, then run:
-
-```bash
-git init
-git add .
-git commit -m "Initial commit: diabetes prediction system"
-git branch -M main
-git remote add origin https://github.com/<your-username>/<your-repo-name>.git
-git push -u origin main
-```
-
-Replace `<your-username>` and `<your-repo-name>` with your actual GitHub
-username and the repo name you created. It'll ask you to sign in the first
-time (or use a personal access token if prompted).
-
-## Notes
-
-- The dataset here is **synthetic**, generated to have plausible statistical
-  relationships between the health metrics and diabetes outcome — it isn't
-  real patient data.
-- This app is for educational purposes only and is not a medical diagnostic
-  tool.
