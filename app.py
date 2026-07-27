@@ -66,4 +66,4 @@ if st.button("Predict"):
     else:
         st.success("✅ There is no significant chance of having diabetes.")
 
-    st.write(f"Probability of diabetes: {probability*100:.2f}%")
+    st.write(f"Probability of diabetes: {probability*100:.2f}%") 
